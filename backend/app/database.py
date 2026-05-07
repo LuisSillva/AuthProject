@@ -6,7 +6,7 @@ DATABASE_URL = "sqlite:///./app/data/auth.db"
 
 engine = create_engine(
     DATABASE_URL,
-    connect_args={"check_saame_thread": False}
+    connect_args={"check_same_thread": False}
 )
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
