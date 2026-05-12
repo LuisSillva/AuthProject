@@ -17,7 +17,7 @@ def register(user_data: UserCreate, db: Session = Depends(get_db)): # Funçao re
         )
     new_user = User(    # Cria um objeto User SQLAlchemy
         email=user_data.email,
-        hashed_passwod=hash_password(user_data.password) # Hash da senha antes de salvar no banco. A senha pura nunca é salva. 
+        hashed_password=hash_password(user_data.password) # Hash da senha antes de salvar no banco. A senha pura nunca é salva. 
     )
     db.add(new_user)
     db.commit()
