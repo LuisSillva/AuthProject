@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 app/data/*.db
 .env
+node_modules/
+build/
+.env
