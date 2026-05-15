@@ -2,7 +2,7 @@
 
 A full-stack authentication system built with FastAPI and React. Covers user registration, login, JWT-based auth, and protected routes.
 
-Built as a learning project — every architectural decision is intentional and explained.
+Built as a learning project.
 
 ---
 
